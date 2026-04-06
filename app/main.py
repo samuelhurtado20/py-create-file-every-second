@@ -14,9 +14,6 @@ def main() -> None:
             # 1. Obtener el tiempo actual
             now = datetime.now()
 
-            # 2. Formatear el nombre del archivo: app-{hours}_{minutes}_{seconds}.log
-            # Nota: Usamos %-H, %-M, %-S si queremos evitar ceros a la izquierda, 
-            # pero el formato estándar compatible es %H_%M_%S.
             file_name = f"app-{now.hour}_{now.minute}_{now.second}.log"
 
             # 3. Formatear el contenido (Timestamp completo)
